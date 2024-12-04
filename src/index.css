@@ -84,17 +84,17 @@
 .products-categories ul {
   list-style-type: none;
 }
+
 .products-categories ul {
   text-align: left;
   padding-left: 0px;
 }
-.products-categories-section p
-{
+
+.products-categories-section p {
   text-align: left;
 }
 
-.products-categories 
-{
+.products-categories {
   text-align: left;
 }
 
@@ -108,18 +108,19 @@
   text-align: left;
 }
 
-.price-filter{
+.price-filter {
   float: right;
   margin-top: 18px;
 }
-.price-filter select{
+
+.price-filter select {
   border: 1px solid #000000;
   border-radius: 5px;
   width: 150px;
   padding: 5px;
 }
 
-.products-list{
+.products-list {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -134,27 +135,28 @@
   height: 200px;
   width: 100%;
 }
-.footer
-{
+
+.footer {
   width: 100%;
 }
-.footer .col-4{
+
+.footer .col-4 {
   display: inline-block;
   width: 20%;
   text-align: left;
 
 }
-.footer .col-4 ul{
+
+.footer .col-4 ul {
   padding-left: 0px;;
 }
 
-
-.footer .col-4 ul li{
+.footer .col-4 ul li {
   list-style: none;
   padding-left: 0px;
 }
-.footer-bottom
-{
+
+.footer-bottom {
   width: 100%;
   text-align: left;
 }
@@ -179,8 +181,6 @@
 .footer-bottom .footer-copywrite {
   flex-wrap: wrap;
 }
-
-
 
 .footer .footer-social-icons a{
   float: left;
@@ -217,7 +217,6 @@
   display:none;
 }
 
-
 @-webkit-keyframes spin {
 	from {-webkit-transform:rotate(0deg);}
 	to {-webkit-transform:rotate(360deg);}
@@ -243,7 +242,6 @@
   animation: spin .8s linear infinite;
 }
 
-
 #error {
   padding: 20px;
   background-color: #f44336;
@@ -252,12 +250,24 @@
   margin-top: 15px;
   display:none;
 }
+
 .cross-bar {
   display:none;
 }
 
 .filter-and-sort-section {
   display:none;
+}
+
+sup {
+  color: #ffffff;
+  font-size: 12px;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background-color: darkslategray;
+  border-radius: 50%;
+  padding: 3px;
 }
 
 @media only screen and (max-width: 1920px) {
@@ -324,6 +334,7 @@
     width:100%;
     height:100%;
   }
+
   .products-filter-section {
     width:100%;
   }
@@ -366,7 +377,7 @@
     position: relative;
   }
 
-  .banner-img-section img{
+  .banner-img-section img {
     height: auto;
     position: relative;
   }
@@ -376,7 +387,7 @@
     display: block;
   }
 
-  .products-ordered-list{
+  .products-ordered-list {
     width: 100%;
   }
 
@@ -384,7 +395,7 @@
     width: 100%;
   }
 
-  .products-list-section .price-filter{
+  .products-list-section .price-filter {
     display: none;
   }
 
