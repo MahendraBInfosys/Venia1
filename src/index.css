@@ -277,6 +277,11 @@ sup {
   width: 20%;
 }
 
+.fav-icon-section img {
+  width: 9%;
+  height: 9%;
+}
+
 @media only screen and (max-width: 1920px) {
   .navbar-notification-icon {
     position:absolute;

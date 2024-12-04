@@ -158,6 +158,7 @@ function Products(props) {
                         <img src={product.image} alt={product.title}></img>
                         <p>{product.title}</p>
                         <span>${product.price}</span>
+                        <p className="fav-icon-section"><img src="./icons8-heart-50.png" width="12px" height="12px" /></p>
                     </div>
                 ))}
             </div>
