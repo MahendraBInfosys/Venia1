@@ -32,6 +32,8 @@ function Products(props) {
     useEffect(() => {
         if (categories.length > 0) {
             filterProductsByCategories(categories);
+        } else {
+            updateProducts(products, 0);
         }
     }, [categories]);
 
@@ -174,6 +176,3 @@ function Products(props) {
   }
   
   export default Products;
-
-
-  
