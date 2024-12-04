@@ -73,6 +73,7 @@ function Products(props) {
     }
 
     const checkProducts = (e) => {
+        setSortBy("");
         if (e.target.checked) {
             setCategories([...categories, e.target.value]);
         } else {
@@ -81,7 +82,6 @@ function Products(props) {
     }
 
     const sortByPrice = (e) => {
-        debugger;
         const updatedProducts = filteredProductsByCategory.length ? filteredProductsByCategory : products;
         let newProducts = updatedProducts;
         if (e.target.value === "Low-Price") {
@@ -92,6 +92,7 @@ function Products(props) {
             newProducts = updatedProducts.sort((a, b) => parseFloat(a.id) - parseFloat(b.id)); 
         }
         updateProducts(newProducts, 0);
+        setSortBy(e.target.value);
         setLastPostIndex(0);
     };
 
@@ -134,7 +135,7 @@ function Products(props) {
         <div className="products-list-section"> 
             <div id="error" /> 
             <div className="price-filter">
-                <select name={sortBy} onChange={(e) => sortByPrice(e)}>
+                <select value={sortBy} onChange={(e) => sortByPrice(e)}>
                     <option value="">Sort by Price</option>
                     <option value="Low-Price">Price - Low to High</option>
                     <option value="High-Price">Price - High to Low</option>
