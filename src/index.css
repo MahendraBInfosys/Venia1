@@ -270,6 +270,13 @@ sup {
   padding: 3px;
 }
 
+.banner-title-section hr {
+  border: none;
+  height: 5px;
+  background-color: #0000FF;
+  width: 20%;
+}
+
 @media only screen and (max-width: 1920px) {
   .navbar-notification-icon {
     position:absolute;
